@@ -9,9 +9,9 @@ RUN mkdir -p /opt/app
 RUN cd /opt/app
 RUN pip install flask_restful
 
-ADD ./hackable /opt/app/hackable
+ADD ./hack /opt/app/hack
 
-WORKDIR /opt/app/hackable
+WORKDIR /opt/app/hack
 
 
 ENTRYPOINT [ "python", "main.py" ]
